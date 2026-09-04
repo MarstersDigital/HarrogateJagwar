@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    Harrogate Jagwar Specialists - Production Stylesheet
    Theme: Luxury Automotive Charcoal & Sleek Greys with Metallic Bronze Accents
    Palette: Obsidian & Deep Slate Charcoal (#121518, #0D1013),
@@ -849,8 +849,9 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
 .team-lead-media img {
   width: 100%;
-  height: 420px;
+  height: 480px;
   object-fit: cover;
+  object-position: center top;
 }
 
 .team-lead-badge {
