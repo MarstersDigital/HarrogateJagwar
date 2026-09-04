@@ -154,36 +154,4 @@
     });
   }
 
-  // --- 5. Contact / Booking Form Handler ---
-  const bookingForm = document.getElementById("booking-form");
-  const formStatus = document.getElementById("form-status");
-
-  if (bookingForm) {
-    bookingForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      if (!bookingForm.checkValidity()) {
-        bookingForm.reportValidity();
-        return;
-      }
-
-      const name = document.getElementById("field-name")?.value.trim() || "";
-      const phone = document.getElementById("field-phone")?.value.trim() || "";
-      const email = document.getElementById("field-email")?.value.trim() || "";
-      const reg = document.getElementById("field-reg")?.value.trim().toUpperCase() || "";
-      const model = document.getElementById("field-model")?.value.trim() || "";
-      const service = document.getElementById("field-service")?.value || "";
-      const date = document.getElementById("field-date")?.value || "";
-      const message = document.getElementById("field-message")?.value.trim() || "";
-
-      if (formStatus) {
-        formStatus.className = "form-status-msg is-success";
-        formStatus.innerHTML = `
-          <strong>Thank you, ${name}!</strong><br>
-          Your service inquiry has been submitted. Please call our workshop directly on <a href="tel:01423815390" style="color:var(--color-bronze); font-weight:700;">01423 815 390</a> to finalize your booking time and discuss any specific parts required.
-        `;
-        bookingForm.reset();
-      }
-    });
-  }
 })();

@@ -1129,40 +1129,52 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 /* ==========================================================================
-   Contact Page & Form
+   Contact Page Layout & Information Cards
    ========================================================================== */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 3.5rem;
-}
-
-.contact-info-panel {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .info-block {
   background: var(--color-charcoal-card);
   border: 1px solid var(--color-charcoal-border);
-  border-radius: var(--radius-md);
-  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-block:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-card-featured {
+  border-color: rgba(197, 160, 89, 0.35);
+  background: linear-gradient(180deg, rgba(26, 30, 35, 1) 0%, rgba(18, 21, 24, 1) 100%);
 }
 
 .info-block h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
   color: var(--color-parchment);
 }
 
 .info-block h3 svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   color: var(--color-bronze);
+  flex-shrink: 0;
 }
 
 .hours-table {
@@ -1171,7 +1183,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .hours-table td {
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -1181,86 +1193,50 @@ body.nav-open .nav-toggle span:nth-child(3) {
   font-weight: 500;
 }
 
-.contact-form-card {
+/* Service Booking Process Guidance */
+.contact-guidance-card {
   background: var(--color-charcoal-card);
   border: 1px solid var(--color-charcoal-border);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-lg);
+  padding: 2.75rem 2.5rem;
+  margin-top: 2rem;
 }
 
-.contact-form-card h2 {
-  font-size: 1.85rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact-form-card p {
-  color: var(--color-muted-text);
+.contact-guidance-card h3 {
+  font-size: 1.6rem;
+  color: var(--color-parchment);
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-.form-grid {
+.guidance-steps {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
-.form-group {
+.guidance-step {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
-.form-group.full-width {
-  grid-column: 1 / -1;
+.guidance-step-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-bronze);
+  line-height: 1;
 }
 
-.form-group label {
-  font-size: 0.85rem;
-  font-weight: 600;
+.guidance-step h4 {
+  font-size: 1.15rem;
   color: var(--color-parchment);
 }
 
-.form-control {
-  background: var(--color-slate-dark);
-  border: 1px solid var(--color-charcoal-border);
-  border-radius: var(--radius-sm);
-  padding: 0.85rem 1rem;
-  color: var(--color-parchment);
-  transition: all var(--transition-fast);
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--color-bronze);
-  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
-}
-
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-status-msg {
-  padding: 1rem;
-  border-radius: var(--radius-sm);
-  margin-top: 1.25rem;
-  display: none;
-  font-size: 0.95rem;
-}
-
-.form-status-msg.is-success {
-  display: block;
-  background: rgba(46, 125, 50, 0.18);
-  border: 1px solid #2e7d32;
-  color: #a5d6a7;
-}
-
-.form-status-msg.is-error {
-  display: block;
-  background: rgba(198, 40, 40, 0.18);
-  border: 1px solid #c62828;
-  color: #ef9a9a;
+.guidance-step p {
+  font-size: 0.92rem;
+  color: var(--color-muted-text);
+  line-height: 1.65;
 }
 
 /* Map Section */
@@ -1486,6 +1462,11 @@ textarea.form-control {
 
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .guidance-steps {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
   .footer-grid {

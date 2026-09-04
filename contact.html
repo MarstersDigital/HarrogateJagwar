@@ -58,7 +58,7 @@
         <p class="eyebrow">Direct Workshop Access</p>
         <h1>Schedule an Appointment &amp; Visit Our Workshop</h1>
         <p class="page-hero-sub">
-          Contact Trevor Montgomery and the specialist team directly. Submit an online service inquiry or call for immediate technical advice.
+          Contact Trevor Montgomery and the specialist team directly by telephone for appointments, diagnostic consultations, or workshop visits.
         </p>
       </div>
     </section>
@@ -67,22 +67,30 @@
     <section class="section section--dark">
       <div class="container">
         <div class="contact-grid">
-          <!-- Information Column -->
-          <div class="contact-info-panel">
-            <div class="info-block">
+          <!-- Telephone Card -->
+          <div class="info-block contact-card-featured">
+            <div>
               <h3>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Telephone Enquiries
               </h3>
-              <p style="font-size: 1.35rem; font-weight: 700; color: var(--color-parchment); margin-bottom: 0.25rem;">
+              <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-parchment); margin-bottom: 0.5rem;">
                 <a href="tel:01423815390">01423 815 390</a>
               </p>
-              <p style="font-size: 0.88rem; color: var(--color-muted-text);">
-                Direct line to the workshop for immediate bookings and technical advice.
+              <p style="font-size: 0.92rem; color: var(--color-muted-text); line-height: 1.6;">
+                Direct line to the workshop. Speak directly with a technician to discuss symptoms, arrange scheduled servicing, or book official diagnostics.
               </p>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="tel:01423815390" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Call 01423 815 390
+              </a>
+            </div>
+          </div>
 
-            <div class="info-block">
+          <!-- Workshop Hours Card -->
+          <div class="info-block">
+            <div>
               <h3>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 Workshop Hours
@@ -104,89 +112,55 @@
                 </tbody>
               </table>
             </div>
+            <p style="font-size: 0.85rem; color: var(--color-muted-text); margin-top: 1.25rem;">
+              Early vehicle drop-off and late collection arranged upon request.
+            </p>
+          </div>
 
-            <div class="info-block">
+          <!-- Facility Address Card -->
+          <div class="info-block">
+            <div>
               <h3>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Facility Address
               </h3>
-              <p style="color: var(--color-parchment); line-height: 1.6;">
+              <p style="color: var(--color-parchment); line-height: 1.6; font-size: 0.95rem;">
                 <strong>Unit 1, Saltergate Business Park</strong><br>
                 Burley Bank Road (off A59)<br>
                 Harrogate, North Yorkshire<br>
                 <strong>HG3 2BX</strong>
               </p>
-              <p style="font-size: 0.85rem; color: var(--color-muted-text); margin-top: 0.5rem;">
-                Convenient parking directly outside our bay doors. Courtesy vehicle availability upon prior arrangement.
+              <p style="font-size: 0.85rem; color: var(--color-muted-text); margin-top: 0.75rem;">
+                Dedicated parking right outside our bay doors. Courtesy vehicle availability upon prior arrangement.
               </p>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://maps.google.com/?q=Unit+1+Saltergate+Business+Park+Harrogate+HG3+2BX" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                Get Directions &rarr;
+              </a>
+            </div>
           </div>
+        </div>
 
-          <!-- Booking & Contact Form -->
-          <div class="contact-form-card">
-            <h2>Book Service or Request Consultation</h2>
-            <p>Fill out the details below and we will confirm your appointment promptly.</p>
-
-            <form id="booking-form" novalidate>
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="field-name">Your Full Name *</label>
-                  <input type="text" id="field-name" name="name" class="form-control" required placeholder="e.g. David Harrison">
-                </div>
-
-                <div class="form-group">
-                  <label for="field-phone">Telephone Number *</label>
-                  <input type="tel" id="field-phone" name="phone" class="form-control" required placeholder="e.g. 07700 900123">
-                </div>
-
-                <div class="form-group">
-                  <label for="field-email">Email Address *</label>
-                  <input type="email" id="field-email" name="email" class="form-control" required placeholder="e.g. david@example.com">
-                </div>
-
-                <div class="form-group">
-                  <label for="field-reg">Vehicle Registration</label>
-                  <input type="text" id="field-reg" name="reg" class="form-control" placeholder="e.g. YK18 JLR" style="text-transform: uppercase;">
-                </div>
-
-                <div class="form-group">
-                  <label for="field-model">Jaguar Model &amp; Year</label>
-                  <input type="text" id="field-model" name="model" class="form-control" placeholder="e.g. 2018 F-Pace 3.0d V6">
-                </div>
-
-                <div class="form-group">
-                  <label for="field-service">Service Required *</label>
-                  <select id="field-service" name="service" class="form-control" required>
-                    <option value="" disabled selected>Select a Service</option>
-                    <option value="Scheduled Servicing (A / B Interval)">Scheduled Servicing (A / B Interval)</option>
-                    <option value="Dealer Diagnostic / Warning Light">Dealer Diagnostic / Warning Light Check</option>
-                    <option value="Timing Chain / Mechanical Repair">Timing Chain / Mechanical Repair</option>
-                    <option value="ZF Automatic Transmission Service">ZF Automatic Transmission Service</option>
-                    <option value="Air Suspension / Brakes">Air Suspension / Adaptive Dampers / Brakes</option>
-                    <option value="Air Conditioning Recharge & Service">Air Conditioning Recharge &amp; Service</option>
-                    <option value="MOT Preparation & Arranged Test">MOT Preparation &amp; Arranged Test</option>
-                    <option value="Classic / Heritage Jaguar Care">Classic / Heritage Jaguar Care</option>
-                    <option value="General Inspection / Other">General Inspection / Other</option>
-                  </select>
-                </div>
-
-                <div class="form-group full-width">
-                  <label for="field-date">Preferred Booking Date (Optional)</label>
-                  <input type="date" id="field-date" name="date" class="form-control">
-                </div>
-
-                <div class="form-group full-width">
-                  <label for="field-message">Symptoms, Fault Codes, or Notes</label>
-                  <textarea id="field-message" name="message" class="form-control" placeholder="Please describe any warning messages, unusual noises, recent history, or specific requests..."></textarea>
-                </div>
-              </div>
-
-              <div style="margin-top: 1.75rem;">
-                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Booking Request</button>
-              </div>
-
-              <div id="form-status" class="form-status-msg" role="status"></div>
-            </form>
+        <!-- How We Book & Consult Guidance Banner -->
+        <div class="contact-guidance-card">
+          <h3>How We Arrange Your Service</h3>
+          <div class="guidance-steps">
+            <div class="guidance-step">
+              <span class="guidance-step-num">01</span>
+              <h4>Direct Technician Advice</h4>
+              <p>When you call, you speak directly with factory-trained technicians who understand Jaguar engineering, not front-desk call handlers.</p>
+            </div>
+            <div class="guidance-step">
+              <span class="guidance-step-num">02</span>
+              <h4>Clear Scope &amp; Estimates</h4>
+              <p>We confirm vehicle details, check official Jaguar service schedules, and provide transparent estimates before any work begins.</p>
+            </div>
+            <div class="guidance-step">
+              <span class="guidance-step-num">03</span>
+              <h4>Digital Service Record Update</h4>
+              <p>All servicing is officially logged on Jaguar’s Online Service History (OSH) portal, keeping your warranty and vehicle provenance intact.</p>
+            </div>
           </div>
         </div>
 
