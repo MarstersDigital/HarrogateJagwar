@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop &amp; Project Gallery | Harrogate Jagwar Specialists</title>
+  <meta name="description" content="Explore photos from our Harrogate workshop: Jaguar servicing, dealer diagnostics, classic preservation, and precision mechanical repairs.">
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Harrogate Jagwar Specialists Home">
+        <img src="Images/logo.png" alt="Harrogate Jagwar Specialists">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="team.html" class="nav-link">Meet the Team</a></li>
+          <li><a href="gallery.html" class="nav-link active">Workshop Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact &amp; Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:01423815390" class="btn-phone" aria-label="Call 01423 815 390">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>01423 815 390</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Book Service</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Workshop Gallery</span>
+        </nav>
+        <p class="eyebrow">Visual Craftsmanship</p>
+        <h1>Workshop &amp; Engineering Gallery</h1>
+        <p class="page-hero-sub">
+          A visual look inside our Saltergate facility: diagnostic telemetry, powertrain overhauls, routine factory servicing, and specialist preservation. Click any image to launch the high-resolution lightbox.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <!-- Filter Tabs -->
+        <div class="gallery-filters" role="tablist" aria-label="Gallery categories">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="diagnostics">Diagnostics &amp; Software</button>
+          <button class="filter-btn" data-filter="mechanical">Mechanical &amp; Engine</button>
+          <button class="filter-btn" data-filter="servicing">Scheduled Servicing</button>
+          <button class="filter-btn" data-filter="facility">Workshop Facility</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- 1. Workshop Bays Hero -->
+          <div class="gallery-item" data-category="facility" data-src="Images/hero-bg.jpg" data-title="Specialist Workshop Bays" data-subtitle="Saltergate Business Park, Harrogate">
+            <img src="Images/hero-bg.jpg" alt="Harrogate Jagwar Specialists workshop bays" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Specialist Workshop Bays</h4>
+              <span>Facility &middot; Saltergate Business Park</span>
+            </div>
+          </div>
+
+          <!-- 2. Diagnostic Telemetry -->
+          <div class="gallery-item" data-category="diagnostics" data-src="Images/services.jpg" data-title="Jaguar SDD &amp; Pathfinder Diagnostics" data-subtitle="Factory-Level Electronic Fault Isolation">
+            <img src="Images/services.jpg" alt="Official Jaguar SDD and Pathfinder Diagnostics" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>SDD &amp; Pathfinder Diagnostics</h4>
+              <span>Diagnostics &middot; Factory Software</span>
+            </div>
+          </div>
+
+          <!-- 3. Trevor Montgomery at Work -->
+          <div class="gallery-item" data-category="mechanical" data-src="Images/about.jpg" data-title="Trevor Montgomery - Master Technician" data-subtitle="Detailed Engine Inspection &amp; Component Testing">
+            <img src="Images/about.jpg" alt="Trevor Montgomery Master Technician at work" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Trevor Montgomery &middot; Master Tech</h4>
+              <span>Mechanical &middot; Lead Technician Bay</span>
+            </div>
+          </div>
+
+          <!-- 4. Scheduled Servicing -->
+          <div class="gallery-item" data-category="servicing" data-src="Images/teaser-servicing.jpg" data-title="Factory A &amp; B Scheduled Servicing" data-subtitle="Jaguar OEM Filter Replacements &amp; Health Inspections">
+            <img src="Images/teaser-servicing.jpg" alt="Scheduled Jaguar Servicing inspection" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Scheduled Jaguar Servicing</h4>
+              <span>Servicing &middot; Topix DSR Updates</span>
+            </div>
+          </div>
+
+          <!-- 5. Powertrain & Timing Chains -->
+          <div class="gallery-item" data-category="mechanical" data-src="Images/teaser-repairs.jpg" data-title="Timing Chain &amp; Mechanical Overhaul" data-subtitle="Supercharged V8 &amp; Ingenium Powertrain Work">
+            <img src="Images/teaser-repairs.jpg" alt="Jaguar timing chains and powertrain overhaul" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Timing Chains &amp; Powertrain</h4>
+              <span>Mechanical &middot; Precision Engineering</span>
+            </div>
+          </div>
+
+          <!-- 6. Under-Bonnet Inspection -->
+          <div class="gallery-item" data-category="servicing" data-src="Images/teaser-about.jpg" data-title="Under-Bonnet Diagnostic Check" data-subtitle="Comprehensive Cooling &amp; Ancillary Health Audit">
+            <img src="Images/teaser-about.jpg" alt="Under-bonnet mechanical check at Harrogate Jagwar" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Multi-Point Health Audit</h4>
+              <span>Servicing &middot; Preventive Care</span>
+            </div>
+          </div>
+
+          <!-- 7. Saltergate Facility Map & Location -->
+          <div class="gallery-item" data-category="facility" data-src="Images/map.jpg" data-title="Harrogate Facility Map" data-subtitle="Unit 1 Saltergate Business Park, Burley Bank Road">
+            <img src="Images/map.jpg" alt="Harrogate Jagwar Specialists Facility location map" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Saltergate Business Park Map</h4>
+              <span>Facility &middot; Burley Bank Road / A59</span>
+            </div>
+          </div>
+
+          <!-- 8. Genuine Parts & Diagnostics Detail -->
+          <div class="gallery-item" data-category="diagnostics" data-src="Images/services.jpg" data-title="Module Coding &amp; Calibration" data-subtitle="Online Dealership Coding for New Control Units">
+            <img src="Images/services.jpg" alt="Jaguar module coding and telemetry" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Module Coding &amp; Key Pairing</h4>
+              <span>Diagnostics &middot; Online Topix Calibration</span>
+            </div>
+          </div>
+
+          <!-- 9. Chassis & Suspension Bay -->
+          <div class="gallery-item" data-category="mechanical" data-src="Images/hero-bg.jpg" data-title="Air Suspension &amp; Chassis Geometry" data-subtitle="Calibration of Active Air Springs &amp; Adaptive Dampers">
+            <img src="Images/hero-bg.jpg" alt="Jaguar air suspension calibration" loading="lazy">
+            <div class="gallery-overlay">
+              <h4>Air Suspension &amp; Dampers</h4>
+              <span>Mechanical &middot; Chassis Dynamics</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <p style="color: var(--color-muted-text); margin-bottom: 1.5rem;">Have a specific Jaguar mechanical or diagnostic requirement?</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Discuss Your Vehicle with Trevor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image view">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image view">&times;</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+      <div class="lightbox-image-wrap">
+        <img src="" alt="" id="lightbox-img">
+      </div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html">
+            <img src="Images/logo.png" alt="Harrogate Jagwar Specialists">
+          </a>
+          <p>
+            North Yorkshire’s premier independent Jaguar authority. Dedicated factory-trained engineering, dealer-level diagnostics, and classic Jaguar preservation.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--color-bronze);">
+            <strong>Harrogate Jagwar Specialists Ltd</strong> &middot; Co. Reg: 07715102
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Specialist Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="gallery.html">Workshop Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Workshop Hours</h4>
+          <ul class="footer-links" style="font-size: 0.88rem;">
+            <li><strong>Mon &ndash; Fri:</strong> 8:30am &ndash; 5:30pm</li>
+            <li><strong>Saturday:</strong> 8:30am &ndash; 12:00pm</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <a href="tel:01423815390" style="font-weight: 700; color: var(--color-parchment);">01423 815 390</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <a href="mailto:harrogatejagwar@gmail.com">harrogatejagwar@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              Unit 1, Saltergate Business Park,<br>Burley Bank Road, Harrogate, HG3 2BX
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> Harrogate Jagwar Specialists Limited. All rights reserved.
+        </div>
+        <div class="footer-disclaimer">
+          Harrogate Jagwar Specialists is an independent vehicle specialist and is not officially affiliated with or endorsed by Jaguar Land Rover Limited.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
