@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Baskervville:ital@0;1&display=swap');
-
 /* ==========================================================================
    Harrogate Jagwar Specialists - Production Stylesheet
    Theme: Luxury Automotive Charcoal & Sleek Greys with Metallic Bronze Accents
@@ -36,8 +34,8 @@
   --color-muted-text: #8e9ca7;
   --color-dark-text: #121518;
 
-  --font-serif: 'Monotype Baskerville', 'Monotype Baskerville Regular', 'Baskerville Old Face', 'Baskerville', 'Libre Baskerville', 'Baskervville', Georgia, serif;
-  --font-sans: 'Monotype Baskerville', 'Monotype Baskerville Regular', 'Baskerville Old Face', 'Baskerville', 'Libre Baskerville', 'Baskervville', Georgia, serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+  --font-sans: Georgia, 'Times New Roman', Times, serif;
 
   --radius-sm: 4px;
   --radius-md: 8px;
