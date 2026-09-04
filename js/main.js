@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Harrogate Jagwar Specialists - Interactive Functionality
  * Includes: Sticky Header, Mobile Navigation, Lightbox Gallery, Form Dispatch
  */
@@ -176,39 +176,14 @@
       const date = document.getElementById("field-date")?.value || "";
       const message = document.getElementById("field-message")?.value.trim() || "";
 
-      const subject = `Jaguar Booking Inquiry - ${reg || model || "Specialist Service"} - ${name}`;
-      const emailBody = [
-        "JAGUAR SERVICE & BOOKING INQUIRY",
-        "------------------------------------",
-        `Full Name: ${name}`,
-        `Telephone: ${phone}`,
-        `Email: ${email}`,
-        `Vehicle Registration: ${reg || "Not specified"}`,
-        `Jaguar Model / Year: ${model || "Not specified"}`,
-        `Service Required: ${service}`,
-        `Preferred Date: ${date || "Flexible"}`,
-        "",
-        "Customer Notes / Symptoms:",
-        message,
-        "------------------------------------",
-        "Sent via Harrogate Jagwar Specialists Website"
-      ].join("\n");
-
-      const mailtoUrl = `mailto:harrogatejagwar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-
       if (formStatus) {
         formStatus.className = "form-status-msg is-success";
         formStatus.innerHTML = `
           <strong>Thank you, ${name}!</strong><br>
-          Opening your email client to dispatch this request directly to <strong>harrogatejagwar@gmail.com</strong>.<br>
-          If your email app did not open automatically, please call us on <a href="tel:01423815390" style="color:var(--color-bronze); font-weight:700;">01423 815 390</a>.
+          Your service inquiry has been submitted. Please call our workshop directly on <a href="tel:01423815390" style="color:var(--color-bronze); font-weight:700;">01423 815 390</a> to finalize your booking time and discuss any specific parts required.
         `;
+        bookingForm.reset();
       }
-
-      // Trigger mailto client
-      setTimeout(function () {
-        window.location.href = mailtoUrl;
-      }, 500);
     });
   }
 })();
