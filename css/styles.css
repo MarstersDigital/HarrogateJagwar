@@ -389,6 +389,7 @@ p:last-child {
   color: var(--color-text-body);
   position: relative;
   padding: 0.5rem 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -1381,6 +1382,69 @@ textarea.form-control {
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1024px) {
+  :root {
+    --header-height: 76px;
+  }
+
+  /* Tablet & Mobile Navigation Drawer */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: rgba(13, 16, 19, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  body.nav-open .site-nav {
+    transform: translateX(0);
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .header-actions .btn-primary {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Hero Section for Tablet Viewports */
+  .hero {
+    min-height: auto;
+    padding: 4.25rem 0 4.75rem;
+    background-image: 
+      linear-gradient(180deg, rgba(13, 16, 19, 0.94) 0%, rgba(18, 21, 24, 0.88) 55%, rgba(18, 21, 24, 0.96) 100%),
+      url('../Images/hero-bg.jpg');
+    background-position: center right;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1425,6 +1489,22 @@ textarea.form-control {
   }
 }
 
+/* Specific Vertical / Portrait Tablet Optimization */
+@media (orientation: portrait) and (max-width: 1200px) {
+  .hero {
+    min-height: auto;
+    padding: 4.25rem 0 4.75rem;
+    background-image: 
+      linear-gradient(180deg, rgba(13, 16, 19, 0.95) 0%, rgba(18, 21, 24, 0.89) 55%, rgba(18, 21, 24, 0.97) 100%),
+      url('../Images/hero-bg.jpg');
+    background-position: 75% center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --header-height: 72px;
@@ -1435,50 +1515,7 @@ textarea.form-control {
   }
 
   .hero {
-    min-height: auto;
-    padding: 3rem 0;
-    background-image: 
-      linear-gradient(180deg, rgba(13, 16, 19, 0.93) 0%, rgba(18, 21, 24, 0.85) 60%, rgba(18, 21, 24, 0.96) 100%),
-      url('../Images/hero-bg.jpg');
-    background-position: 70% center;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .site-nav {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    background: rgba(13, 16, 19, 0.98);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    padding: 2.5rem 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    transform: translateX(-100%);
-    transition: transform var(--transition-normal);
-    overflow-y: auto;
-  }
-
-  body.nav-open .site-nav {
-    transform: translateX(0);
-  }
-
-  .site-nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
-  }
-
-  .nav-link {
-    font-size: 1.25rem;
-    width: 100%;
+    padding: 3.25rem 0 3.75rem;
   }
 
   .header-actions .btn-primary {
