@@ -16,9 +16,11 @@
   --color-charcoal-border: #2d343c;     /* Clean architectural grey border */
   --color-charcoal-border-light: #3a424d;
 
-  /* Subtle British Racing Green Touch (Retained only for micro-accents) */
-  --color-racing-green-accent: #0f3823;
-  --color-racing-green-subtle: rgba(15, 56, 35, 0.25);
+  /* Jaguar Racing Green Accent & Header Palette */
+  --color-jaguar-green: #0a2d1e;
+  --color-jaguar-green-dark: #072015;
+  --color-racing-green-accent: #0a2d1e;
+  --color-racing-green-subtle: rgba(10, 45, 30, 0.25);
 
   /* Metallic Warm Bronze & Gold Accents */
   --color-bronze: #C5A059;
@@ -338,7 +340,7 @@ p:last-child {
 }
 
 /* ==========================================================================
-   Header & Navigation (Sleek Slate Grey Glassmorphism)
+   Header & Navigation (Dark Jaguar Racing Green Glassmorphism)
    ========================================================================== */
 .site-header {
   position: sticky;
@@ -346,17 +348,17 @@ p:last-child {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(18, 21, 24, 0.94);
+  background-color: rgba(10, 41, 27, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--color-charcoal-border);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.22);
   transition: all var(--transition-normal);
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(13, 16, 19, 0.98);
-  border-bottom-color: rgba(197, 160, 89, 0.25);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(7, 28, 18, 0.98);
+  border-bottom-color: rgba(197, 160, 89, 0.38);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
 }
 
 .header-inner {
@@ -396,7 +398,7 @@ p:last-child {
 .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-text-body);
+  color: var(--color-off-white);
   position: relative;
   padding: 0.5rem 0;
   white-space: nowrap;
@@ -1407,9 +1409,10 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: calc(100vh - var(--header-height));
-    background: rgba(13, 16, 19, 0.98);
+    background: rgba(7, 28, 18, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    border-right: 1px solid rgba(197, 160, 89, 0.2);
     padding: 2.5rem 2rem;
     flex-direction: column;
     align-items: flex-start;
@@ -1541,8 +1544,8 @@ textarea.form-control {
 
   .btn-phone {
     padding: 0.55rem;
-    background: rgba(34, 39, 46, 0.85);
-    border: 1px solid var(--color-charcoal-border);
+    background: rgba(14, 46, 30, 0.9);
+    border: 1px solid rgba(197, 160, 89, 0.35);
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
