@@ -1,26 +1,38 @@
 ﻿/* ==========================================================================
    Harrogate Jagwar Specialists - Production Stylesheet
-   Brand Palette: Deep British Racing Green (#0A2F1D), Rich Slate Charcoal (#121815),
-                  Metallic Warm Bronze (#C5A059), Parchment Off-White (#F9F8F5)
+   Theme: Luxury Automotive Charcoal & Sleek Greys with Metallic Bronze Accents
+   Palette: Obsidian & Deep Slate Charcoal (#121518, #0D1013),
+            Refined Slate Grey (#1A1E23, #22272E, #2D343C),
+            Metallic Warm Bronze (#C5A059), Platinum Off-White (#F4F6F8)
    ========================================================================== */
 
 :root {
-  --color-racing-green: #0A2F1D;
-  --color-racing-green-dark: #061e13;
-  --color-racing-green-light: #124d30;
-  --color-slate-charcoal: #121815;
-  --color-charcoal-card: #19221e;
-  --color-charcoal-card-hover: #1f2b25;
-  --color-charcoal-border: #28362e;
+  /* Sleek Automotive Greys & Obsidian Palette */
+  --color-slate-charcoal: #121518;      /* Primary body background */
+  --color-slate-dark: #0d1013;          /* Deepest obsidian for footers & contrasts */
+  --color-slate-elevated: #161a1f;      /* Secondary container background */
+  --color-charcoal-card: #1a1e23;       /* Surface card background */
+  --color-charcoal-card-hover: #22272e; /* Elevated card hover */
+  --color-charcoal-border: #2d343c;     /* Clean architectural grey border */
+  --color-charcoal-border-light: #3a424d;
+
+  /* Subtle British Racing Green Touch (Retained only for micro-accents) */
+  --color-racing-green-accent: #0f3823;
+  --color-racing-green-subtle: rgba(15, 56, 35, 0.25);
+
+  /* Metallic Warm Bronze & Gold Accents */
   --color-bronze: #C5A059;
   --color-bronze-hover: #b38d45;
   --color-bronze-dark: #8c6e33;
   --color-bronze-glow: rgba(197, 160, 89, 0.2);
-  --color-parchment: #F9F8F5;
-  --color-off-white: #EDEDE9;
-  --color-text-body: #d2ddd6;
-  --color-muted-text: #96a89e;
-  --color-dark-text: #1a221e;
+  --color-bronze-subtle: rgba(197, 160, 89, 0.1);
+
+  /* Platinum, Parchment & Text Scale */
+  --color-parchment: #F4F6F8;
+  --color-off-white: #e6ebf0;
+  --color-text-body: #c4cdd5;
+  --color-muted-text: #8e9ca7;
+  --color-dark-text: #121518;
 
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -30,10 +42,10 @@
   --radius-lg: 16px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 25px rgba(197, 160, 89, 0.3);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 25px rgba(197, 160, 89, 0.25);
 
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
@@ -174,8 +186,9 @@ p:last-child {
   background-color: var(--color-slate-charcoal);
 }
 
-.section--green {
-  background: linear-gradient(180deg, var(--color-racing-green-dark) 0%, var(--color-racing-green) 100%);
+.section--green,
+.section--featured {
+  background: linear-gradient(180deg, var(--color-slate-dark) 0%, var(--color-slate-elevated) 100%);
   border-top: 1px solid var(--color-charcoal-border);
   border-bottom: 1px solid var(--color-charcoal-border);
 }
@@ -210,7 +223,7 @@ p:last-child {
 }
 
 .section--parchment .section-intro {
-  color: #55635c;
+  color: #4e5a63;
 }
 
 /* Accessibility Skip Link */
@@ -219,7 +232,7 @@ p:last-child {
   top: -100px;
   left: 1.5rem;
   background: var(--color-bronze);
-  color: var(--color-slate-charcoal);
+  color: var(--color-slate-dark);
   padding: 0.75rem 1.25rem;
   font-weight: 700;
   z-index: 10000;
@@ -248,7 +261,7 @@ p:last-child {
 
 .btn-primary {
   background-color: var(--color-bronze);
-  color: var(--color-slate-charcoal);
+  color: var(--color-slate-dark);
   border: 1px solid var(--color-bronze);
   box-shadow: 0 4px 14px rgba(197, 160, 89, 0.3);
 }
@@ -261,13 +274,13 @@ p:last-child {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(34, 39, 46, 0.7);
   color: var(--color-parchment);
   border: 1px solid var(--color-charcoal-border);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(45, 52, 60, 0.9);
   border-color: var(--color-bronze);
   color: var(--color-bronze);
   transform: translateY(-2px);
@@ -281,7 +294,7 @@ p:last-child {
 
 .btn-outline-bronze:hover {
   background: var(--color-bronze);
-  color: var(--color-slate-charcoal);
+  color: var(--color-slate-dark);
   transform: translateY(-2px);
 }
 
@@ -318,7 +331,7 @@ p:last-child {
 }
 
 /* ==========================================================================
-   Header & Navigation
+   Header & Navigation (Sleek Slate Grey Glassmorphism)
    ========================================================================== */
 .site-header {
   position: sticky;
@@ -326,16 +339,17 @@ p:last-child {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(10, 47, 29, 0.92);
+  background-color: rgba(18, 21, 24, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+  border-bottom: 1px solid var(--color-charcoal-border);
   transition: all var(--transition-normal);
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(6, 31, 19, 0.98);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(13, 16, 19, 0.98);
+  border-bottom-color: rgba(197, 160, 89, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .header-inner {
@@ -443,16 +457,16 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Section (Graphite, Obsidian & Neutral Grey Overlays)
    ========================================================================== */
 .hero {
   position: relative;
   min-height: 82vh;
   display: flex;
   align-items: center;
-  background-color: var(--color-racing-green-dark);
+  background-color: var(--color-slate-dark);
   background-image: 
-    linear-gradient(135deg, rgba(6, 31, 19, 0.94) 0%, rgba(10, 47, 29, 0.88) 50%, rgba(18, 24, 21, 0.92) 100%),
+    linear-gradient(135deg, rgba(13, 16, 19, 0.96) 0%, rgba(18, 21, 24, 0.90) 50%, rgba(26, 30, 35, 0.92) 100%),
     url('../Images/hero-bg.jpg');
   background-size: cover;
   background-position: center right;
@@ -504,8 +518,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(18, 24, 21, 0.65);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(22, 26, 31, 0.8);
+  border: 1px solid var(--color-charcoal-border);
   border-radius: var(--radius-full);
   padding: 0.4rem 0.9rem;
   font-size: 0.82rem;
@@ -525,20 +539,21 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .glass-badge-card {
-  background: rgba(26, 34, 30, 0.75);
+  background: rgba(26, 30, 35, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 160, 89, 0.3);
+  border: 1px solid var(--color-charcoal-border);
   border-radius: var(--radius-md);
   padding: 1.75rem;
   position: relative;
   box-shadow: var(--shadow-lg);
-  transition: transform var(--transition-normal);
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
 }
 
 .glass-badge-card:hover {
   transform: translateY(-4px);
   border-color: var(--color-bronze);
+  background: rgba(34, 39, 46, 0.95);
 }
 
 .card-icon-title {
@@ -569,7 +584,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .page-hero {
   position: relative;
   padding: 4.5rem 0 3.5rem;
-  background: linear-gradient(180deg, var(--color-racing-green-dark) 0%, var(--color-slate-charcoal) 100%);
+  background: linear-gradient(180deg, var(--color-slate-dark) 0%, var(--color-slate-charcoal) 100%);
   border-bottom: 1px solid var(--color-charcoal-border);
 }
 
@@ -597,10 +612,11 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 /* ==========================================================================
-   Trust / Proof Banner Strip
+   Trust / Proof Banner Strip (Refined Graphite Grey)
    ========================================================================== */
 .trust-strip {
-  background-color: var(--color-racing-green);
+  background-color: var(--color-slate-elevated);
+  border-top: 1px solid var(--color-charcoal-border);
   border-bottom: 1px solid var(--color-charcoal-border);
   padding: 1.75rem 0;
 }
@@ -621,8 +637,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(197, 160, 89, 0.15);
-  border: 1px solid var(--color-bronze);
+  background: rgba(34, 39, 46, 0.9);
+  border: 1px solid var(--color-charcoal-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -647,7 +663,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 /* ==========================================================================
-   Services Cards & Grid
+   Services Cards & Grid (Sleek Slate Grey Cards)
    ========================================================================== */
 .services-grid {
   display: grid;
@@ -667,6 +683,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
 .service-card:hover {
   transform: translateY(-6px);
+  background: var(--color-charcoal-card-hover);
   border-color: var(--color-bronze);
   box-shadow: var(--shadow-md);
 }
@@ -675,7 +692,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   position: relative;
   height: 220px;
   overflow: hidden;
-  background-color: var(--color-slate-charcoal);
+  background-color: var(--color-slate-dark);
 }
 
 .service-card-media img {
@@ -693,7 +710,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: rgba(10, 47, 29, 0.85);
+  background: rgba(18, 21, 24, 0.88);
   border: 1px solid var(--color-bronze);
   color: var(--color-parchment);
   font-size: 0.75rem;
@@ -771,21 +788,21 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .comparison-table th {
-  background: var(--color-racing-green);
+  background: #1c2127;
   font-family: var(--font-serif);
   font-size: 1.15rem;
   color: var(--color-parchment);
 }
 
 .comparison-table th.col-highlight {
-  background: var(--color-racing-green-dark);
+  background: #15191e;
   color: var(--color-bronze);
   border-left: 2px solid var(--color-bronze);
   border-right: 2px solid var(--color-bronze);
 }
 
 .comparison-table td.col-highlight {
-  background: rgba(10, 47, 29, 0.35);
+  background: rgba(197, 160, 89, 0.06);
   font-weight: 600;
   color: var(--color-parchment);
   border-left: 2px solid var(--color-bronze);
@@ -826,7 +843,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid rgba(197, 160, 89, 0.4);
+  border: 1px solid var(--color-charcoal-border-light);
   box-shadow: var(--shadow-lg);
 }
 
@@ -841,7 +858,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   bottom: 1.25rem;
   left: 1.25rem;
   right: 1.25rem;
-  background: rgba(10, 47, 29, 0.9);
+  background: rgba(18, 21, 24, 0.92);
   backdrop-filter: blur(8px);
   border: 1px solid var(--color-bronze);
   padding: 0.75rem 1rem;
@@ -868,6 +885,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
 .team-card:hover {
   transform: translateY(-6px);
+  background: var(--color-charcoal-card-hover);
   border-color: var(--color-bronze);
   box-shadow: var(--shadow-md);
 }
@@ -878,7 +896,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   border-radius: var(--radius-full);
   margin: 0 auto 1.5rem;
   border: 2px solid var(--color-bronze);
-  background: var(--color-racing-green);
+  background: #20262d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -937,7 +955,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .filter-btn:hover,
 .filter-btn.active {
   background: var(--color-bronze);
-  color: var(--color-slate-charcoal);
+  color: var(--color-slate-dark);
   border-color: var(--color-bronze);
 }
 
@@ -967,7 +985,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(6, 31, 19, 0.95) 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(13, 16, 19, 0.95) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1002,7 +1020,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   position: fixed;
   inset: 0;
   z-index: 10000;
-  background: rgba(6, 31, 19, 0.96);
+  background: rgba(10, 13, 16, 0.96);
   backdrop-filter: blur(16px);
   display: flex;
   align-items: center;
@@ -1035,7 +1053,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   justify-content: center;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid var(--color-bronze);
+  border: 1px solid var(--color-charcoal-border);
   background: #000;
 }
 
@@ -1057,7 +1075,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .lightbox-next {
   position: absolute;
   color: var(--color-parchment);
-  background: rgba(18, 24, 21, 0.8);
+  background: rgba(26, 30, 35, 0.9);
   border: 1px solid var(--color-charcoal-border);
   border-radius: var(--radius-full);
   display: flex;
@@ -1093,7 +1111,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background: var(--color-bronze);
-  color: var(--color-slate-charcoal);
+  color: var(--color-slate-dark);
   border-color: var(--color-bronze);
 }
 
@@ -1191,7 +1209,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .form-control {
-  background: var(--color-slate-charcoal);
+  background: var(--color-slate-dark);
   border: 1px solid var(--color-charcoal-border);
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
@@ -1220,14 +1238,14 @@ textarea.form-control {
 
 .form-status-msg.is-success {
   display: block;
-  background: rgba(46, 125, 50, 0.2);
+  background: rgba(46, 125, 50, 0.18);
   border: 1px solid #2e7d32;
   color: #a5d6a7;
 }
 
 .form-status-msg.is-error {
   display: block;
-  background: rgba(198, 40, 40, 0.2);
+  background: rgba(198, 40, 40, 0.18);
   border: 1px solid #c62828;
   color: #ef9a9a;
 }
@@ -1251,7 +1269,7 @@ textarea.form-control {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
-  background: rgba(10, 47, 29, 0.95);
+  background: rgba(18, 22, 26, 0.95);
   backdrop-filter: blur(10px);
   border: 1px solid var(--color-bronze);
   padding: 1.5rem;
@@ -1272,10 +1290,10 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   Footer
+   Footer (Rich Deep Obsidian / Graphite Grey)
    ========================================================================== */
 .site-footer {
-  background-color: var(--color-racing-green-dark);
+  background-color: var(--color-slate-dark);
   border-top: 1px solid var(--color-charcoal-border);
   padding: 4.5rem 0 2rem;
   color: var(--color-muted-text);
@@ -1354,7 +1372,7 @@ textarea.form-control {
 }
 
 .footer-disclaimer {
-  color: #72847a;
+  color: #64707a;
   margin-top: 0.5rem;
   font-size: 0.78rem;
 }
@@ -1426,7 +1444,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: calc(100vh - var(--header-height));
-    background: rgba(6, 31, 19, 0.98);
+    background: rgba(13, 16, 19, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     padding: 2.5rem 2rem;
