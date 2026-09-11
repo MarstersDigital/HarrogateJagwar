@@ -470,32 +470,42 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 /* ==========================================================================
-   Hero Section (Graphite, Obsidian & Neutral Grey Overlays)
+   Hero Section (Yorkshire Countryside Heritage with Blue Jaguar XK8)
    ========================================================================== */
 .hero {
   position: relative;
-  min-height: 82vh;
+  min-height: 84vh;
   display: flex;
   align-items: center;
   background-color: var(--color-slate-dark);
   background-image: 
-    linear-gradient(180deg, rgba(13, 16, 19, 0.2) 0%, rgba(13, 16, 19, 0) 50%, rgba(18, 21, 24, 0.85) 100%),
-    linear-gradient(90deg, rgba(13, 16, 19, 0.98) 0%, rgba(13, 16, 19, 0.93) 42%, rgba(18, 21, 24, 0.5) 60%, rgba(18, 21, 24, 0.08) 82%, rgba(18, 21, 24, 0) 100%),
-    url('../Images/hero-bg.jpg');
-  background-size: cover;
-  background-position: right center;
+    linear-gradient(180deg, rgba(13, 16, 19, 0.4) 0%, rgba(13, 16, 19, 0) 22%, rgba(13, 16, 19, 0) 80%, rgba(13, 16, 19, 0.25) 100%),
+    linear-gradient(90deg, 
+      #0d1013 0%, 
+      rgba(13, 16, 19, 0.98) 22%, 
+      rgba(13, 16, 19, 0.92) 34%, 
+      rgba(13, 16, 19, 0.55) 45%, 
+      rgba(13, 16, 19, 0.12) 52%, 
+      rgba(13, 16, 19, 0) 58%, 
+      rgba(13, 16, 19, 0) 100%),
+    url('../Images/Jagwar Hero Image.jpg');
+  background-size: 100% 100%, 100% 100%, cover;
+  background-position: center top, left top, right 65%;
   background-repeat: no-repeat;
   border-bottom: 1px solid var(--color-charcoal-border);
-  padding: 5rem 0 6rem;
+  padding: 5.5rem 0 6.5rem;
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: clamp(420px, 42vw, 580px);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -1427,18 +1437,25 @@ body.nav-open .nav-toggle span:nth-child(3) {
     font-size: 0.85rem;
   }
 
-  /* Hero Section for Tablet Viewports */
+  /* Hero Section for Tablet & 4:3 Displays */
   .hero {
     min-height: auto;
-    padding: 4.25rem 0 4.75rem;
+    padding: 4.5rem 0 4.75rem;
     background-image: 
-      linear-gradient(180deg, rgba(13, 16, 19, 0.94) 0%, rgba(18, 21, 24, 0.88) 55%, rgba(18, 21, 24, 0.96) 100%),
-      url('../Images/hero-bg.jpg');
-    background-position: center right;
+      linear-gradient(90deg, 
+        #0d1013 0%, 
+        #0d1013 22%, 
+        rgba(13, 16, 19, 0.95) 36%, 
+        rgba(13, 16, 19, 0.45) 50%, 
+        rgba(13, 16, 19, 0.1) 60%, 
+        rgba(13, 16, 19, 0) 68%),
+      url('../Images/Jagwar Hero Image.jpg');
+    background-size: 100% 100%, cover;
+    background-position: left top, calc(100% + 140px) 65%;
   }
 
   .hero-content {
-    max-width: 100%;
+    max-width: 420px;
   }
 
   .hero-inner {
@@ -1496,9 +1513,13 @@ body.nav-open .nav-toggle span:nth-child(3) {
     min-height: auto;
     padding: 4.25rem 0 4.75rem;
     background-image: 
-      linear-gradient(180deg, rgba(13, 16, 19, 0.95) 0%, rgba(18, 21, 24, 0.89) 55%, rgba(18, 21, 24, 0.97) 100%),
-      url('../Images/hero-bg.jpg');
-    background-position: 75% center;
+      linear-gradient(180deg, 
+        rgba(13, 16, 19, 0.92) 0%, 
+        rgba(13, 16, 19, 0.82) 42%, 
+        rgba(13, 16, 19, 0.35) 70%, 
+        rgba(13, 16, 19, 0.8) 100%),
+      url('../Images/Jagwar Hero Image.jpg');
+    background-position: 78% 65%;
   }
 
   .hero-content {
@@ -1560,7 +1581,21 @@ body.nav-open .nav-toggle span:nth-child(3) {
   }
 
   .hero {
-    padding: 3rem 0 3.5rem;
+    padding: 3.25rem 0 19rem;
+    background-image: 
+      linear-gradient(180deg, 
+        rgba(13, 16, 19, 0.96) 0%, 
+        rgba(13, 16, 19, 0.90) 35%, 
+        rgba(13, 16, 19, 0.4) 55%, 
+        rgba(13, 16, 19, 0) 65%,
+        rgba(13, 16, 19, 0.4) 100%),
+      url('../Images/Jagwar Hero Image.jpg');
+    background-position: 80% bottom;
+    background-size: cover;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-sub {
