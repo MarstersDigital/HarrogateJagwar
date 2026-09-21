@@ -483,11 +483,11 @@ body.nav-open .nav-toggle span:nth-child(3) {
     linear-gradient(180deg, rgba(13, 16, 19, 0.4) 0%, rgba(13, 16, 19, 0) 22%, rgba(13, 16, 19, 0) 80%, rgba(13, 16, 19, 0.25) 100%),
     linear-gradient(90deg, 
       #0d1013 0%, 
-      rgba(13, 16, 19, 0.98) 22%, 
-      rgba(13, 16, 19, 0.92) 34%, 
-      rgba(13, 16, 19, 0.55) 45%, 
-      rgba(13, 16, 19, 0.12) 52%, 
-      rgba(13, 16, 19, 0) 58%, 
+      rgba(13, 16, 19, 0.98) 25%, 
+      rgba(13, 16, 19, 0.92) 38%, 
+      rgba(13, 16, 19, 0.65) 47%, 
+      rgba(13, 16, 19, 0.18) 53%, 
+      rgba(13, 16, 19, 0) 57%, 
       rgba(13, 16, 19, 0) 100%),
     url('../Images/Jagwar Hero Image.jpg');
   background-size: 100% 100%, 100% 100%, cover;
@@ -504,7 +504,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .hero-content {
-  max-width: clamp(380px, 44vw, 560px);
+  max-width: clamp(360px, 40vw, 500px);
+  margin-left: clamp(2rem, 5vw, 4.75rem);
   position: relative;
   z-index: 2;
 }
@@ -551,7 +552,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
     margin-bottom: 1.15rem;
   }
   .hero-content {
-    max-width: clamp(380px, 44vw, 490px);
+    max-width: clamp(350px, 39vw, 470px);
+    margin-left: clamp(1.75rem, 4.5vw, 4.25rem);
   }
 }
 
@@ -1485,6 +1487,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
   .hero-content {
     max-width: 420px;
+    margin-left: 0;
   }
 
   .hero-inner {
