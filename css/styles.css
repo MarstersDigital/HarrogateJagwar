@@ -1283,10 +1283,12 @@ body.nav-open .nav-toggle span:nth-child(3) {
   position: relative;
 }
 
-.map-container img {
+.map-container img,
+.map-container iframe {
   width: 100%;
-  height: 380px;
-  object-fit: cover;
+  height: 440px;
+  border: 0;
+  display: block;
 }
 
 .map-badge-overlay {
@@ -1300,6 +1302,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
   border-radius: var(--radius-md);
   max-width: 380px;
   box-shadow: var(--shadow-lg);
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .map-badge-overlay h4 {
