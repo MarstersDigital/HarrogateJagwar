@@ -1731,4 +1731,26 @@ body.nav-open .nav-toggle span:nth-child(3) {
   }
 }
 
+/* ==========================================================================
+   Google Reviews Testimonials Section
+   ========================================================================== */
+.reviews-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .reviews-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews-cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
 

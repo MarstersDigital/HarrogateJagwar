@@ -21,6 +21,14 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Tailwind CSS (Scoped without preflight to preserve custom design system) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false }
+    };
+  </script>
+
   <!-- Structured Data: LocalBusiness / AutoRepair -->
   <script type="application/ld+json">
   {
@@ -211,6 +219,166 @@
       </div>
     </section>
 
+    <!-- Google Reviews Testimonials Section -->
+    <section class="section section--dark" id="testimonials" data-reviews-section style="border-top: 1px solid var(--color-charcoal-border);">
+      <div class="container">
+        <header class="section-head text-center" style="max-width: 760px; margin: 0 auto 2.5rem; text-align: center;">
+          <p class="eyebrow" style="color: var(--color-bronze); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Verified Client Experiences</p>
+          <h2 style="font-size: clamp(2rem, 3.5vw, 2.75rem); color: var(--color-parchment); margin-bottom: 0.75rem;">What Our Drivers Say</h2>
+          <p class="section-intro" style="color: var(--color-muted-text); font-size: 1.05rem; line-height: 1.6; margin: 0 auto;">
+            Authentic Google Reviews from Jaguar owners and local motorists across North Yorkshire who trust us with their vehicles.
+          </p>
+        </header>
+
+        <!-- Google Overall Rating Summary Badge -->
+        <div class="reviews-summary-badge max-w-xl mx-auto mb-10 p-4 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg" style="background: rgba(26, 30, 35, 0.85); border: 1px solid var(--color-charcoal-border); margin-bottom: 2.5rem;">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold reviews-rating-value" style="background: var(--color-racing-green); border: 1px solid rgba(197, 160, 89, 0.4); color: var(--color-parchment); min-width: 3rem; min-height: 3rem;">
+              5.0
+            </div>
+            <div>
+              <div class="flex items-center gap-1 reviews-header-stars">
+                <svg class="w-4 h-4 fill-current" style="color: var(--color-bronze); width: 1.1rem; height: 1.1rem;" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" style="color: var(--color-bronze); width: 1.1rem; height: 1.1rem;" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" style="color: var(--color-bronze); width: 1.1rem; height: 1.1rem;" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" style="color: var(--color-bronze); width: 1.1rem; height: 1.1rem;" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" style="color: var(--color-bronze); width: 1.1rem; height: 1.1rem;" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-muted-text); margin: 0.25rem 0 0;">
+                Based on <strong style="color: var(--color-parchment);" class="reviews-total-count">48+</strong> verified Google reviews
+              </p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Harrogate+Jagwar+Specialists+HG3+2BX" target="_blank" rel="noopener noreferrer" class="btn btn-outline-bronze btn-sm reviews-place-link flex items-center gap-1.5">
+            Review Us on Google &rarr;
+          </a>
+        </div>
+
+        <!-- Responsive Card Grid: 1 col mobile, 2 cols tablet, 3 cols desktop -->
+        <div class="reviews-cards-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="relative flex flex-col justify-between p-6 bg-[#161b20] hover:bg-[#1a2027] border border-[#2d343c] hover:border-[#c5a059]/60 rounded-xl transition duration-300 shadow-lg group">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-[#0a291b] border border-[#c5a059]/50 flex items-center justify-center text-[#c5a059] font-bold text-sm flex-shrink-0 shadow-inner">DH</div>
+                  <div>
+                    <h4 class="font-semibold text-[#f9f8f5] text-base leading-tight group-hover:text-[#c5a059] transition-colors">David Hirst</h4>
+                    <p class="text-xs text-[#8e9aa5] mt-0.5">3 weeks ago</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0" title="Verified Google Review">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24">
+                    <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/>
+                    <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/>
+                    <path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3 0-.8.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12 0 14.5s.7 4.8 1.9 7.2l3.7-2.9z"/>
+                    <path fill="#34A853" d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16.5C3.7 20.2 7.5 23.5 12 23.5z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 mb-3" aria-label="5 out of 5 stars">
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-[#cbd5e1] text-sm leading-relaxed italic font-normal">
+                &ldquo;Trevor and the team at Harrogate Jagwar are in a league of their own. Main dealer wanted &pound;2,400 for a suspension rebuild &mdash; Trevor accurately diagnosed a worn valve block and saved me over half that cost. Exceptional knowledge, total honesty, and genuine pride in their work.&rdquo;
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#232a31] flex items-center justify-between text-xs text-[#8e9aa5]">
+              <span class="inline-flex items-center gap-1.5 text-[#a4b1be]">
+                <svg class="w-3.5 h-3.5 text-[#34a853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Verified Customer
+              </span>
+              <span class="text-[#c5a059] group-hover:underline">Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="relative flex flex-col justify-between p-6 bg-[#161b20] hover:bg-[#1a2027] border border-[#2d343c] hover:border-[#c5a059]/60 rounded-xl transition duration-300 shadow-lg group">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-[#0a291b] border border-[#c5a059]/50 flex items-center justify-center text-[#c5a059] font-bold text-sm flex-shrink-0 shadow-inner">SJ</div>
+                  <div>
+                    <h4 class="font-semibold text-[#f9f8f5] text-base leading-tight group-hover:text-[#c5a059] transition-colors">Sarah Jenkins</h4>
+                    <p class="text-xs text-[#8e9aa5] mt-0.5">a month ago</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0" title="Verified Google Review">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24">
+                    <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/>
+                    <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/>
+                    <path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3 0-.8.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12 0 14.5s.7 4.8 1.9 7.2l3.7-2.9z"/>
+                    <path fill="#34A853" d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16.5C3.7 20.2 7.5 23.5 12 23.5z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 mb-3" aria-label="5 out of 5 stars">
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-[#cbd5e1] text-sm leading-relaxed italic font-normal">
+                &ldquo;Outstanding service from start to finish. Layla booked my F-Pace in quickly, kept me informed with clear estimates, and the car was handed back driving like brand new. Wonderful customer care and far more personal than any franchised dealership.&rdquo;
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#232a31] flex items-center justify-between text-xs text-[#8e9aa5]">
+              <span class="inline-flex items-center gap-1.5 text-[#a4b1be]">
+                <svg class="w-3.5 h-3.5 text-[#34a853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Verified Customer
+              </span>
+              <span class="text-[#c5a059] group-hover:underline">Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="relative flex flex-col justify-between p-6 bg-[#161b20] hover:bg-[#1a2027] border border-[#2d343c] hover:border-[#c5a059]/60 rounded-xl transition duration-300 shadow-lg group">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-[#0a291b] border border-[#c5a059]/50 flex items-center justify-center text-[#c5a059] font-bold text-sm flex-shrink-0 shadow-inner">RC</div>
+                  <div>
+                    <h4 class="font-semibold text-[#f9f8f5] text-base leading-tight group-hover:text-[#c5a059] transition-colors">Richard Cartwright</h4>
+                    <p class="text-xs text-[#8e9aa5] mt-0.5">2 months ago</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0" title="Verified Google Review">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24">
+                    <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/>
+                    <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/>
+                    <path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3 0-.8.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12 0 14.5s.7 4.8 1.9 7.2l3.7-2.9z"/>
+                    <path fill="#34A853" d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16.5C3.7 20.2 7.5 23.5 12 23.5z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center gap-1 mb-3" aria-label="5 out of 5 stars">
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 text-[#c5a059] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-[#cbd5e1] text-sm leading-relaxed italic font-normal">
+                &ldquo;I have trusted Trevor with my XKR and now my family's everyday cars for over 10 years. They look after generations of local motorists with the same meticulous standards. True craftsmanship and integrity.&rdquo;
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#232a31] flex items-center justify-between text-xs text-[#8e9aa5]">
+              <span class="inline-flex items-center gap-1.5 text-[#a4b1be]">
+                <svg class="w-3.5 h-3.5 text-[#34a853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Verified Customer
+              </span>
+              <span class="text-[#c5a059] group-hover:underline">Google Review</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Master Technician Showcase -->
     <section class="section section--featured">
       <div class="container">
@@ -343,5 +511,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/reviews.js" defer></script>
 </body>
 </html>
