@@ -1,2 +1,3 @@
 # Raw high-resolution photo backups (kept locally, excluded from git)
 raw_images_backup/
+scratch/
