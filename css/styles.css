@@ -676,6 +676,13 @@ body.nav-open .nav-toggle span:nth-child(3) {
   gap: 1.5rem;
 }
 
+.values-grid,
+.trust-grid--3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
 .trust-item {
   display: flex;
   align-items: center;
@@ -1563,7 +1570,9 @@ body.nav-open .nav-toggle span:nth-child(3) {
     gap: 2.5rem;
   }
 
-  .trust-grid {
+  .trust-grid,
+  .values-grid,
+  .trust-grid--3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1703,7 +1712,9 @@ body.nav-open .nav-toggle span:nth-child(3) {
     display: none;
   }
 
-  .trust-grid {
+  .trust-grid,
+  .values-grid,
+  .trust-grid--3 {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
